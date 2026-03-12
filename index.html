@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Memory Game</h1>
+
+<div class="controls">
+
+<label for="difficulty">Difficulty:</label>
+
+<select id="difficulty" onchange="changeDifficulty()">
+<option value="8">Easy</option>
+<option value="12">Medium</option>
+<option value="16">Hard</option>
+</select>
+
+</div>
+
+<div class="info">
+Score: <span id="score">0</span> |
+Moves: <span id="moves">0</span> |
+Time: <span id="time">0</span>s
+</div>
+
+<button onclick="restartGame()">Restart Game</button>
+
+<div class="game-board" id="gameBoard"></div>
+
+<h2 id="message"></h2>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
